@@ -1,0 +1,50 @@
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ GOOS=windows GOARCH=amd64 go build lesson1_1.go 
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ 
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ 
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ ll
+total 4548
+drwxrwxr-x 2 sbnemov sbnemov    4096 апр 10 12:50 ./
+drwxrwxr-x 4 sbnemov sbnemov    4096 апр  7 15:02 ../
+-rwxrwxr-x 1 sbnemov sbnemov 2213121 апр 10 12:47 a.out*
+-rwxrwxr-x 1 sbnemov sbnemov 2377728 апр 10 12:50 lesson1_1.exe*
+-rw-rw-r-- 1 sbnemov sbnemov    2028 апр 10 11:36 lesson1_1.go
+-rw-rw-r-- 1 sbnemov sbnemov   36896 апр 10 12:44 lesson1_1.o
+-rw-rw-r-- 1 sbnemov sbnemov     629 апр  7 19:11 lesson1.go
+-rw-rw-r-- 1 sbnemov sbnemov      14 апр 10 11:34 qwerty.txt
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ GOOS=linux GOARCH=amd64 go build lesson1_1.go 
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ ll
+total 6696
+drwxrwxr-x 2 sbnemov sbnemov    4096 апр 10 12:51 ./
+drwxrwxr-x 4 sbnemov sbnemov    4096 апр  7 15:02 ../
+-rwxrwxr-x 1 sbnemov sbnemov 2213121 апр 10 12:47 a.out*
+-rwxrwxr-x 1 sbnemov sbnemov 2198193 апр 10 12:51 lesson1_1*
+-rwxrwxr-x 1 sbnemov sbnemov 2377728 апр 10 12:50 lesson1_1.exe*
+-rw-rw-r-- 1 sbnemov sbnemov    2028 апр 10 11:36 lesson1_1.go
+-rw-rw-r-- 1 sbnemov sbnemov   36896 апр 10 12:44 lesson1_1.o
+-rw-rw-r-- 1 sbnemov sbnemov     629 апр  7 19:11 lesson1.go
+-rw-rw-r-- 1 sbnemov sbnemov      14 апр 10 11:34 qwerty.txt
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ 
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ file lesson1_1 
+lesson1_1: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, Go BuildID=xlxaV43BLjwOJEwg3PiT/eJ1Bb2HEug5E1gftscRa/hfl3cP48SDZwgmfotSBu/2NmKypcvbwlxa4-hTOl_, not stripped
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ file lesson1_1. 
+lesson1_1.exe  lesson1_1.go   lesson1_1.o    
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ file lesson1_1.exe 
+lesson1_1.exe: PE32+ executable (console) x86-64 (stripped to external PDB), for MS Windows
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ ./lesson1_1.exe 
+bash: ./lesson1_1.exe: cannot execute binary file: Exec format error
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ ./lesson1_1
+FIle Path: qwerty1.txt
+FIle Content: 123
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$ ll
+total 6700
+drwxrwxr-x 2 sbnemov sbnemov    4096 апр 10 12:54 ./
+drwxrwxr-x 4 sbnemov sbnemov    4096 апр  7 15:02 ../
+-rwxrwxr-x 1 sbnemov sbnemov 2213121 апр 10 12:47 a.out*
+-rwxrwxr-x 1 sbnemov sbnemov 2198193 апр 10 12:51 lesson1_1*
+-rwxrwxr-x 1 sbnemov sbnemov 2377728 апр 10 12:50 lesson1_1.exe*
+-rw-rw-r-- 1 sbnemov sbnemov    2028 апр 10 11:36 lesson1_1.go
+-rw-rw-r-- 1 sbnemov sbnemov   36896 апр 10 12:44 lesson1_1.o
+-rw-rw-r-- 1 sbnemov sbnemov     629 апр  7 19:11 lesson1.go
+-rw-rw-r-- 1 sbnemov sbnemov       3 апр 10 12:54 qwerty1.txt
+-rw-rw-r-- 1 sbnemov sbnemov      14 апр 10 11:34 qwerty.txt
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/1$
