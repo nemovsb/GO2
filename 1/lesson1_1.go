@@ -57,16 +57,16 @@ func main() {
 	}
 
 	//	Создание файла
-	_, err := os.Create(fileName)
+	file, err := os.Create(fileName)
 	if err != nil {
 		fmt.Println("fileName: ", err)
 	}
 
 	// Открытие файла
-	file, err := os.OpenFile(fileName, os.O_WRONLY, 0666)
-	if err != nil {
-		fmt.Println("fileName: ", err)
-	}
+	// file, err := os.OpenFile(fileName, os.O_WRONLY, 0666)
+	// if err != nil {
+	// 	fmt.Println("fileName: ", err)
+	// }
 
 	//	Отложенное закрытие файла
 	defer func() {
