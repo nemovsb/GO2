@@ -16,10 +16,11 @@ func main() {
 	for i := 0; i < n; i++ {
 
 		go func(gouroutineID int) {
-			myMu.Lock()
+			//myMu.Lock()
 			defer myMu.Unlock()
 
 			for j := 0; j < 10; j++ {
+				count++
 			}
 
 			fmt.Printf("Gorutine %d done\n", gouroutineID)
