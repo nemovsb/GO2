@@ -1,0 +1,33 @@
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/6$ go run -race task3.go 
+Gorutine 8 done
+Gorutine 4 done
+Gorutine 7 done
+Gorutine 6 done
+==================
+WARNING: DATA RACE
+Read at 0x00c0000b201c by goroutine 12:
+  main.main.func1()
+      /home/sbnemov/lessons/GO2/6/task3.go:23 +0x48
+
+Previous write at 0x00c0000b201c by goroutine 15:
+  main.main.func1()
+      /home/sbnemov/lessons/GO2/6/task3.go:23 +0x64
+
+Goroutine 12 (running) created at:
+  main.main()
+      /home/sbnemov/lessons/GO2/6/task3.go:18 +0xed
+
+Goroutine 15 (finished) created at:
+  main.main()
+      /home/sbnemov/lessons/GO2/6/task3.go:18 +0xed
+==================
+Gorutine 5 done
+Gorutine 9 done
+Gorutine 1 done
+Gorutine 2 done
+Gorutine 0 done
+Gorutine 3 done
+Count : 100
+Found 1 data race(s)
+exit status 66
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/6$
