@@ -1,0 +1,37 @@
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/5$ go test -bench=. -benchmem task3_test.go
+goos: linux
+goarch: amd64
+cpu: Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+BenchmarkSet10WriteM/#00-2      16624978               116.2 ns/op             0 B/op          0 allocs/op
+BenchmarkSet50WriteM/#00-2      10381053               130.5 ns/op             0 B/op          0 allocs/op
+BenchmarkSet90WriteM/#00-2      10506813               144.2 ns/op             0 B/op          0 allocs/op
+BenchmarkSet10WriteRWM/#00-2            17430884                76.72 ns/op            0 B/op          0 allocs/op
+BenchmarkSet50WriteRWM/#00-2            20230732                58.18 ns/op            0 B/op          0 allocs/op
+BenchmarkSet90WriteRWM/#00-2            15736435                75.89 ns/op            0 B/op          0 allocs/op
+PASS
+ok      command-line-arguments  9.119s
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/5$ go test -bench=. -benchmem task3_test.go
+goos: linux
+goarch: amd64
+cpu: Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+BenchmarkSet10WriteM/#00-2      13050181               118.3 ns/op             0 B/op          0 allocs/op
+BenchmarkSet50WriteM/#00-2       9985927               141.9 ns/op             0 B/op          0 allocs/op
+BenchmarkSet90WriteM/#00-2       7419043               158.3 ns/op             0 B/op          0 allocs/op
+BenchmarkSet10WriteRWM/#00-2            25116502                72.24 ns/op            0 B/op          0 allocs/op
+BenchmarkSet50WriteRWM/#00-2            20157006                59.13 ns/op            0 B/op          0 allocs/op
+BenchmarkSet90WriteRWM/#00-2            16708365                77.42 ns/op            0 B/op          0 allocs/op
+PASS
+ok      command-line-arguments  9.066s
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/5$ go test -bench=. -benchmem task3_test.go
+goos: linux
+goarch: amd64
+cpu: Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+BenchmarkSet10WriteM/#00-2      10458530               111.8 ns/op             0 B/op          0 allocs/op
+BenchmarkSet50WriteM/#00-2      14474766               126.1 ns/op             0 B/op          0 allocs/op
+BenchmarkSet90WriteM/#00-2      11240888               142.6 ns/op             0 B/op          0 allocs/op
+BenchmarkSet10WriteRWM/#00-2            26382416                71.35 ns/op            0 B/op          0 allocs/op
+BenchmarkSet50WriteRWM/#00-2            22029393                60.57 ns/op            0 B/op          0 allocs/op
+BenchmarkSet90WriteRWM/#00-2            17387032                76.41 ns/op            0 B/op          0 allocs/op
+PASS
+ok      command-line-arguments  9.715s
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/5$ 
