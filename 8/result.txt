@@ -1,0 +1,38 @@
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/8$ go build less8.go 
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/8$ ./less8 -d /home/sbnemov/lessons/GO2/8/dir1/
+2021/05/05 22:17:52 Original : {/home/sbnemov/lessons/GO2/8/dir1/dir2/file1_duplicate.txt 1972200246 0 false}
+2021/05/05 22:17:52 Duplicate: {/home/sbnemov/lessons/GO2/8/dir1/file1_duplicate.txt 1972200246 0 true}
+2021/05/05 22:17:52 Original : {/home/sbnemov/lessons/GO2/8/dir1/dir2/file2 copy.txt 724699317 3 false}
+2021/05/05 22:17:52 Duplicate: {/home/sbnemov/lessons/GO2/8/dir1/dir2/file2.txt 724699317 3 true}
+2021/05/05 22:17:52 Original : {/home/sbnemov/lessons/GO2/8/dir1/dir2/file2 copy.txt 724699317 3 false}
+2021/05/05 22:17:52 Duplicate: {/home/sbnemov/lessons/GO2/8/dir1/file2 copy.txt 724699317 3 true}
+2021/05/05 22:17:52 Original : {/home/sbnemov/lessons/GO2/8/dir1/dir2/file2 copy.txt 724699317 3 false}
+2021/05/05 22:17:52 Duplicate: {/home/sbnemov/lessons/GO2/8/dir1/file2.txt 724699317 3 true}
+need del?: false
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/8$ ./less8 -d /home/sbnemov/lessons/GO2/8/dir1/ -rm
+2021/05/05 22:17:56 Original : {/home/sbnemov/lessons/GO2/8/dir1/dir2/file1_duplicate.txt 1972200246 0 false}
+2021/05/05 22:17:56 Duplicate: {/home/sbnemov/lessons/GO2/8/dir1/file1_duplicate.txt 1972200246 0 true}
+2021/05/05 22:17:56 Original : {/home/sbnemov/lessons/GO2/8/dir1/dir2/file2 copy.txt 724699317 3 false}
+2021/05/05 22:17:56 Duplicate: {/home/sbnemov/lessons/GO2/8/dir1/dir2/file2.txt 724699317 3 true}
+2021/05/05 22:17:56 Original : {/home/sbnemov/lessons/GO2/8/dir1/dir2/file2 copy.txt 724699317 3 false}
+2021/05/05 22:17:56 Duplicate: {/home/sbnemov/lessons/GO2/8/dir1/file2 copy.txt 724699317 3 true}
+2021/05/05 22:17:56 Original : {/home/sbnemov/lessons/GO2/8/dir1/dir2/file2 copy.txt 724699317 3 false}
+2021/05/05 22:17:56 Duplicate: {/home/sbnemov/lessons/GO2/8/dir1/file2.txt 724699317 3 true}
+need del?: true
+2021/05/05 22:17:56 FIle /home/sbnemov/lessons/GO2/8/dir1/dir2/file2.txt to delete
+2021/05/05 22:17:56 FIle /home/sbnemov/lessons/GO2/8/dir1/dir2/file2.txt removed.
+2021/05/05 22:17:56 FIle /home/sbnemov/lessons/GO2/8/dir1/file1_duplicate.txt to delete
+2021/05/05 22:17:56 FIle /home/sbnemov/lessons/GO2/8/dir1/file1_duplicate.txt removed.
+2021/05/05 22:17:56 FIle /home/sbnemov/lessons/GO2/8/dir1/file2 copy.txt to delete
+2021/05/05 22:17:56 FIle /home/sbnemov/lessons/GO2/8/dir1/file2 copy.txt removed.
+2021/05/05 22:17:56 FIle /home/sbnemov/lessons/GO2/8/dir1/file2.txt to delete
+2021/05/05 22:17:56 FIle /home/sbnemov/lessons/GO2/8/dir1/file2.txt removed.
+Gorutine 8 done
+Gorutine 0 done
+Gorutine 1 done
+Gorutine 2 done
+Gorutine 3 done
+Gorutine 4 done
+Gorutine 5 done
+Gorutine 6 done
+sbnemov@sbnemov-VirtualBox:~/lessons/GO2/8$
