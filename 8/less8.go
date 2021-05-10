@@ -95,7 +95,7 @@ func main() {
 
 	//Помечаем дубли флагом ISDuplicate=true
 	for fileNum := range files {
-		if files[fileNum].ISDuplicate == false {
+		if (files[fileNum].ISDuplicate == false) && (files[fileNum].Hash != 0) {
 			for i := fileNum + 1; i < len(files); i++ {
 				if (files[fileNum].Hash == files[i].Hash) && (files[fileNum].Size == files[i].Size) {
 					files[i].ISDuplicate = true
